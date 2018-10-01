@@ -22,7 +22,7 @@ class employe extends ConnexionDB  {
 		return $sql->rowCount();
 	}
 
-	public function edit($empl,$id)
+	public function edit($id)
 	{
 		$sql = $this->cnx->prepare("UPDATE employes 
                                     SET prenom=?,nom=?,email=?,age=?,ville=? 
